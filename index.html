@@ -1,0 +1,147 @@
+<!DOCUTYPE html>
+<html>
+<head>
+	<title> VIGNESH V - Portfolio</title>
+	<style>
+             body{
+		font-family: Times New Roman, sans-serif;
+		margin: 0;
+		padding: 0;
+		background-color: rgb(1, 1, 15);
+	     }
+
+	     header {
+                 background-color: rgb(243, 10, 30);
+		 color: #fff;
+		 text-align: center;
+		 padding: 2rem 0;
+		 position: relative; /* Add this */
+	     }
+
+	     .header-content h1 {
+		font-size: 2.5rem;
+	     }
+
+	     /* add styles for the round profile picture */
+	     .profile-picture {
+		width: 100px; / the * Adjust the size as needed */
+		height: 100px;
+		border-radius: 100%; /* Create a circular shape */
+		object-fit: cover; /* To ensure the image fills the circular area */
+		position: absolute; /* Add this */
+		top: 75px; /* Adjust top position as needed */
+		left: 75px; /* Adjust left position as needed */	     
+	     }
+
+	     nav {
+                background-color: rgb(84, 86, 211);
+                color: #fff;
+                text-align: center;
+	     }
+
+	     nav ul { 
+		list-style-type: none;
+                padding: 0;
+             }
+
+             nav ul li {
+                display: inline;
+		margin: 0 30px;
+ 	     }
+
+	     nav ul li a{
+                taxt-decoration: none;
+		color: #fff;
+             }
+
+             .section-content {
+		background-color: #4dec75;
+		padding: 2rem;
+		margin: 1rem;
+		border-radius: 20px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+             }
+
+
+              footer {
+ 		text-align: center;
+		padding: 1rem 0;
+		background-color: #ff008c;
+		color: #fff;
+              }
+
+	      ul {
+		list-style-type: disc;
+		padding-left: 20px;
+	      }
+	  </style>
+</head>  	
+<body>
+    <header>
+        <div class="header-content">
+	<!-- Add your profile picture here -->
+	<img src="1.jpeg" alt="Your Profile Picture" class="profile-picture">
+	<h1><u>VIGNESH V</u></h1>
+        <h3>Passionate on Programming</h3>
+	</div>
+    </header>
+
+	<nav>
+  	   <ul>
+		<li><a href="#about">About</a></li>
+		<li><a href="#education">Education</a></li>
+		<li><a href="#skills">Skills</a></li>
+	   </ul>
+        </nav>
+
+
+	<section id="about">
+		<div class="section-content">
+			<h2>About Me</h2>
+			<p>HI Everyone! This is Vignesh V and i am a Computer Appication student.</p>
+		<div>
+	</section>
+
+	<section id="education">
+		<div class="section-content">
+		<h2>B.CA.</h2>
+		<p>Thanthai Periyar Govt.Arts & Science College - Tiruchirappalli-23</p>
+		</div>
+	</section>
+	
+	<section id="skills">
+		<div class="section-content">
+                    <h2>Skills</h2>
+		    <ul>
+			<li>HTML</li>
+			<li>C Language</li>
+			<li>Java Script</li>
+			<li>Python</li>
+  		    </ul>
+		</div>
+	</section>
+
+	<footer>
+		<p>&copy; 2023 VIGNESH</p>
+	</footer>
+
+	<script>
+		// Smooth scrolling to section when clicking on navigation links
+		document.querySelection('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function(e) {
+				e.preventDefault();
+
+			const targetId = this.getAttribute('href").substring(1);
+			const targetElement = document.getElementById(targetId);
+			
+			if (targetElement) {
+				window.scrollTo({
+					top: targetElement.offsetTop,
+					behavior: 'smooth'
+				});
+			}
+                        });
+		});
+	</script>
+</body>
+</html>
